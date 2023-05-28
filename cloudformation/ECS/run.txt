@@ -1,0 +1,3 @@
+aws cloudformation create-stack --stack-name ECS-Stack --template-body file://private-vpc.yaml --capabilities CAPABILITY_NAMED_IAM --region ap-southeast-2
+aws cloudformation update-stack --stack-name ECS-Stack --template-body file://private-vpc.yaml
+aws cloudformation delete-stack --stack-name ECS-Stack

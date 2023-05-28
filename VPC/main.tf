@@ -8,7 +8,7 @@ locals {
   name   = "terraform-vpc"
   region = "ap-southeast-2"
 
-  vpc_cidr = "10.0.0.0/16"
+  vpc_cidr = "10.0.0.0/18"
   azs      = slice(data.aws_availability_zones.available.names, 0, 3)
 
   tags = {
